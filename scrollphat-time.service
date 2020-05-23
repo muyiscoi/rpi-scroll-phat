@@ -1,0 +1,10 @@
+[Unit]
+Description=Scroll Phat Time Script
+After=network.target
+
+[Service]
+ExecStart=/home/muyiscoi/rpi-scroll-phat/scripts/time.py
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
